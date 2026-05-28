@@ -4,7 +4,7 @@ This is the repository that contains source code for the [PaperGuard website](ht
 
 If you find PaperGuard useful for your work please cite:
 ```bibtex
-@inproceedings{zhao2026paperguard,
+@inproceedings{zhao2026does,
   title     = {Does AI Reviewer See the Full Picture? Attacking and Defending Multimodal Peer Review},
   author    = {Zhao, Xinyu and Khan, Rana Muhammad Shahroz and Xu, Zhen and Tan, Zhen and Chen, Tianlong},
   booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
