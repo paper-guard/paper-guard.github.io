@@ -646,6 +646,8 @@
             class="ai ai-arxiv"></i><span>arXiv</span></a>
         <a class="btn code" href="https://github.com/UNITES-Lab/PaperGuard" target="_blank" rel="noopener"><i
             class="fa-brands fa-github"></i><span>Code</span></a>
+        <a class="btn data" href="https://huggingface.co/datasets/rellabear/PaperGuard" target="_blank"
+            rel="noopener"><i class="fa-solid fa-database"></i><span>Benchmark</span></a>
       </div>
     </section>
 
@@ -680,7 +682,7 @@
           failure (e.g., &ldquo;inflate this score&rdquo;) rather than a general safety policy violation, for which no
           practical defenses exist. To address this, we introduce <b>PaperGuard</b>, the <b>first comprehensive
             benchmark designed to systematically evaluate and defend AI-generated peer-review against these
-            domain-specific, cross-modal attacks</b>. Our framework is built on three pillars: <b>(1)</b> a new
+            domain-specific, cross-modal attacks</b>. Our framework makes three contributions: <b>(1)</b> a new
           multimodal peer-review dataset spanning multiple scientific domains; <b>(2)</b> a unified suite of attacks,
           including black-box prompt injections and white-box perturbations, specifically designed to target both text
           (GCG) and figures (PGD); and <b>(3)</b> a practical defense, motivated by the long-context challenge of
@@ -694,27 +696,27 @@
 
     <!-- Three pillars -->
     <section id="contributions">
-      <h2 class="section-heading">Three Pillars</h2>
+      <h2 class="section-heading">Contributions</h2>
       <p class="lead-center">PaperGuard is the first standardized framework to evaluate the robustness of AI-generated
         scientific reviews under multimodal adversarial manipulation.</p>
       <div class="pillars">
         <div class="pillar">
           <div class="pico"><i class="fa-solid fa-database"></i></div>
           <h3>Multimodal Dataset</h3>
-          <p>1,136 papers from ICLR and F1000Research spanning AI/ML and broader scientific domains, parsed to extract
-            text and the key figures (method, results) that carry core evidence.</p>
+          <p>1,136 ICLR and F1000Research papers across scientific domains, parsed into text and key method/results
+            figures.</p>
         </div>
         <div class="pillar">
           <div class="pico"><i class="fa-solid fa-burst"></i></div>
           <h3>Unified Attack Suite</h3>
-          <p>Black-box prompt injection unified with white-box gradient attacks across modalities: GCG for text, and PGD
-            / APGD / C&amp;W for figures&mdash;revealing cross-modal vulnerabilities.</p>
+          <p>Black-box prompt injection plus white-box attacks across modalities&mdash;GCG for text, PGD / APGD / C&amp;W
+            for figures.</p>
         </div>
         <div class="pillar">
           <div class="pico"><i class="fa-solid fa-shield-halved"></i></div>
           <h3>Practical Defense</h3>
-          <p>A lightweight chunk-based embedding similarity search that localizes malicious instructions hidden in long
-            documents&mdash;detecting injections with near-zero false positives.</p>
+          <p>Chunk-based embedding search that localizes hidden malicious instructions in long papers with near-zero
+            false positives.</p>
         </div>
       </div>
     </section>
